@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 8080;
 
 // ✅ Middleware
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://skill-match-anti-resume.vercel.app",
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true
