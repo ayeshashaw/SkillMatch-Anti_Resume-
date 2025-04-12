@@ -5,7 +5,7 @@ export const EmployerContext = createContext();
 
 const EmployerContextProvider = (props) => {
   const [eToken, setEtoken] = useState(localStorage.getItem("eToken") || "");
-  const backendUrl = "http://localhost:8080";
+  const backendUrl = "https://skillmatch-3dxf.onrender.com";
 
   const value = {
     eToken,
