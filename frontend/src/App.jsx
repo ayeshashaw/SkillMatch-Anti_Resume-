@@ -10,6 +10,8 @@ import ForEmployers from "./pages/Employer/ForEmployers";
 import Challenges from "./pages/Candidate/Challenges";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import ChallengeDetails from "./pages/Candidate/ChallengeDetails"; // Import the new page
+
 
 import { EmployerContext } from "./context/EmployerContext";
 import { UserContext } from "./context/UserContext";
@@ -46,6 +48,8 @@ const App = () => {
                     <>
                       <Route path="/for-candidates" element={<ForCandidates />} />
                       <Route path="/challenges" element={<Challenges />} />
+                      <Route path="/challenges/:id" element={<ChallengeDetails />} />
+
                     </>
                   )}
                 </>
