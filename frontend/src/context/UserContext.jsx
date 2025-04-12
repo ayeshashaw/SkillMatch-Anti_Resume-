@@ -4,7 +4,7 @@ import React, { createContext, useState } from "react";
 export const UserContext = createContext();
 
 const UserContextProvider = ({ children }) => {
-  const backendUrl = "http://localhost:8080";
+  const backendUrl = "https://skillmatch-3dxf.onrender.com";
 
   const [token, setToken] = useState(localStorage.getItem("token") || "");
 
